@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="enable-cursor">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEYON</title>
+  <meta name="description" content="A journey of brilliance begins each diamond shaping light, emotion, and timeless beauty through its crafted story, sparkle, and unforgettable visual elegance.">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#BDC8C9">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <div class="social">
+      <a href="#say-hello" class="say-hello cursor-eye">
+        <div class="underline"></div>
+      </a>
+    </div>
+
+    <div class="bottom-text">
+      <img class="bottom-bg" src="./assets/intro/intro-load.png" alt="Intro load" />
+      <img
+        class="center-icon bobbing"
+        src="./assets/intro/Icon.png"
+        alt="Icon"
+        onclick="onIconClick(); toggleBobbing();"
+        style="--icon-size: 42px;"
+        title="Next"
+      />
+    </div>
+  </main>
+
+  <div class="loading">
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="auto"
+      class="loading-bg-video"
+      style="will-change: transform"
+    >
+      <source src="./images/Slide 1 video.mp4" type="video/mp4" />
+    </video>
+
+    <div class="welcome">
+      <!-- <p>WELCOME</p> -->
+    </div>
+
+    <div class="progress">
+      <div class="progress-percent">0%</div>
+      <button onclick="handleGoBeyond()" class="enter cursor-eye">
+        <img src="./indulge.png" alt="Indulge" class="cta-text" />
+      </button>
+    </div>
+
+    <div class="insta-icon">
+      <a href="https://instagram.com/beyon" target="_blank" rel="noopener noreferrer" class="cursor-eye">
+        <img src="./images/insta-icon.png" alt="Instagram" />
+      </a>
+    </div>
+  </div>
+
+  <div class="cursor" data-cursor="pointer">
+    <div class="pointer">
+      <img src="./images/y.png" alt="Cursor" />
+    </div>
+    <div class="eye">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 546.01 296.28" role="img">
+        <g>
+          <g>
+            <circle class="cls-1" cx="273" cy="148.14" r="20.73"></circle>
+            <circle class="cls-1" cx="273" cy="148.14" r="82.94"></circle>
+            <path class="cls-2" d="M273,3C86.39,3,3.46,148.14,3.46,148.14S86.39,293.28,273,293.28,542.55,148.14,542.55,148.14,459.61,3,273,3Z"></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="cross">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 413.94 413.94" role="img">
+        <g>
+          <g>
+            <polygon class="cls-1" points="364.44 4.24 206.97 161.72 49.5 4.24 4.24 49.5 161.72 206.97 4.24 364.44 49.5 409.7 206.97 252.22 364.44 409.7 409.7 364.44 252.22 206.97 409.7 49.5 364.44 4.24"></polygon>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="move">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 84 84" role="img">
+        <path d="M 40 0 a 40 40 0 1 1 -4.898587196589413e-15 80 a 40 40 0 1 1 4.898587196589413e-15 -80 z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+  <script src="./js/runtime.4b30b0f7de521b743d7c.js"></script>
+  <script src="./js/npm.three.4b30b0f7de521b743d7c.js"></script>
+  <script src="./js/npm.gsap.4b30b0f7de521b743d7c.js"></script>
+  <script src="./js/main.20251202173254.js"></script>
+</body>
+</html>

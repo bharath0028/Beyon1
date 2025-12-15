@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en" class="enable-cursor">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEYON</title>
+  <meta name="description" content="A journey of brilliance begins each diamond shaping light, emotion, and timeless beauty through its crafted story, sparkle, and unforgettable visual elegance.">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#BDC8C9">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <div class="social">
+      <a href="#say-hello" class="say-hello cursor-eye">
+        <div class="underline"></div>
+      </a>
+    </div>
+
+    <div class="bottom-text">
+      <img class="bottom-bg" src="./assets/intro/intro-load.png" alt="Intro load" />
+      <img
+        class="center-icon bobbing"
+        src="./assets/intro/Icon.png"
+        alt="Icon"
+        onclick="onIconClick(); toggleBobbing();"
+        style="--icon-size: 42px;"
+        title="Next"
+      />
+    </div>
+
+    <div class="feb-top-right-image">
+      <img src="./assets/feb/beyon.png" alt="Beyon Feb" />
+    </div>
+
+    <div class="apr-top-right-image">
+      <img src="./assets/apr/beyoneol.png" alt="Beyon Apr" />
+    </div>
+
+    <div class="mar-top-right-image">
+      <img src="./assets/feb/beyon.png" alt="Beyon Mar" />
+    </div>
+
+    <div class="may-top-right-image">
+      <img src="./assets/may/beyoneol.png" alt="Beyon May" />
+    </div>
+
+    <div class="jun-top-right-image">
+      <img src="./assets/jun/beyoneol.png" alt="Beyon Jun" />
+    </div>
+
+    <div class="shape-slider" id="mayCutsSlider">
+      <div class="arrow left" id="cutsLeftArrow" role="button" aria-label="Scroll Left">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 6 L9 12 L15 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="arrow right" id="cutsRightArrow" role="button" aria-label="Scroll Right">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 6 L15 12 L9 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="shape-list" id="cutsShapeList">
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (1).png" alt="ROUND" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (2).png" alt="OVAL" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (3).png" alt="MARQUISE" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (4).png" alt="EMERALD" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (5).png" alt="CUSHION" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (6).png" alt="PRINCESS" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (7).png" alt="PEAR" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (8).png" alt="HEART" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (9).png" alt="RADIANT" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (10).png" alt="RADIANT" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (11).png" alt="CUSHION" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (12).png" alt="PRINCESS" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (13).png" alt="PEAR" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (14).png" alt="HEART" />
+        </div>
+        <div class="shape-item">
+          <img src="./assets/may/cuts/Group (15).png" alt="RADIANT" />
+        </div>
+      </div>
+
+      <div class="shape-name">BEYON CUTS</div>
+    </div>
+
+    <div class="jun-text-button">
+      <a href="#" class="cursor-eye">
+        <img src="./assets/jun/discover.png" alt="Discover Beyon Diamonds" />
+      </a>
+    </div>
+
+    <img
+      class="bottom-center-icon cursor-eye"
+      src="./icon.png"
+      alt="Next"
+      title="Next"
+      onclick="onIconClick()"
+    />
+    <img
+      class="bottom-center-icon2 cursor-eye"
+      src="./icon2.png"
+      alt="Next"
+      title="Next"
+      onclick="onIconClick()"
+    />
+
+    <section class="end-cta" id="endCta">
+      <img src="./assets/end/end.png" alt="End" style="display:block;margin:0 auto;max-width:432px;width:50%;height:auto;margin-top:122px;margin-bottom:55px;" />
+      <div class="end-cards">
+        <a href="#find-store" class="end-card cursor-eye">
+          <img class="end-card-img" src="./assets/end/mia1.png" alt="Find a store" />
+          <img class="end-card-btn" src="./assets/end/miabutton1.png" alt="Find a store" />
+        </a>
+        <a href="#shop-online" class="end-card cursor-eye">
+          <img class="end-card-img" src="./assets/end/mia2.png" alt="Shop online" />
+          <img class="end-card-btn" src="./assets/end/miabutton2.png" alt="Shop online" />
+        </a>
+        <a href="#meet-social" class="end-card cursor-eye">
+          <img class="end-card-img" src="./assets/end/mia3.png" alt="Meet us on social" />
+          <img class="end-card-btn" src="./assets/end/miabutton3.png" alt="Meet us on social" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div class="loading">
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="auto"
+      class="loading-bg-video"
+      style="will-change: transform"
+    >
+      <source src="./images/Slide 1 video.mp4" type="video/mp4" />
+    </video>
+
+    <div class="welcome">
+      <!-- <p>WELCOME</p> -->
+    </div>
+
+    <div class="progress">
+
+      <div class="indulge-wrap">
+        <div class="progress-percent">0%</div>
+        <img class="indulge-ring" src="./intro-load.png" alt="Ring" />
+        <button onclick="handleGoBeyond()" class="enter cursor-eye indulge-btn">
+          <img src="./indulge.png" alt="Indulge" class="cta-text" />
+        </button>
+      </div>
+    </div>
+
+    <div class="insta-icon">
+      <a href="https://instagram.com/beyon" target="_blank" rel="noopener noreferrer" class="cursor-eye">
+        <img src="./images/insta-icon.png" alt="Instagram" />
+      </a>
+    </div>
+  </div>
+
+  <div class="cursor" data-cursor="pointer">
+    <div class="pointer">
+      <img src="./images/y.png" alt="Cursor" />
+    </div>
+    <div class="eye">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 546.01 296.28" role="img">
+        <g>
+          <g>
+            <circle class="cls-1" cx="273" cy="148.14" r="20.73"></circle>
+            <circle class="cls-1" cx="273" cy="148.14" r="82.94"></circle>
+            <path class="cls-2" d="M273,3C86.39,3,3.46,148.14,3.46,148.14S86.39,293.28,273,293.28,542.55,148.14,542.55,148.14,459.61,3,273,3Z"></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="cross">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 413.94 413.94" role="img">
+        <g>
+          <g>
+            <polygon class="cls-1" points="364.44 4.24 206.97 161.72 49.5 4.24 4.24 49.5 161.72 206.97 4.24 364.44 49.5 409.7 206.97 252.22 364.44 409.7 409.7 364.44 252.22 206.97 409.7 49.5 364.44 4.24"></polygon>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="move">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 84 84" role="img">
+        <path d="M 40 0 a 40 40 0 1 1 -4.898587196589413e-15 80 a 40 40 0 1 1 4.898587196589413e-15 -80 z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+  <script src="./js/runtime.4b30b0f7de521b743d7c.js"></script>
+  <script src="./js/npm.three.4b30b0f7de521b743d7c.js"></script>
+  <script src="./js/npm.gsap.4b30b0f7de521b743d7c.js"></script>
+  <script src="./js/main.20251202173254.js"></script>
+  <script>
+    // Watch the progress percent updated by the loader and reveal the indulge button at 100%
+    document.addEventListener('DOMContentLoaded', () => {
+      const progressEl = document.querySelector('.indulge-wrap .progress-percent') || document.querySelector('.progress-percent');
+      const indulgeBtn = document.querySelector('.indulge-wrap .indulge-btn');
+      if (!progressEl || !indulgeBtn) return;
+      // Ensure the button is hidden initially
+      indulgeBtn.style.display = 'none';
+
+      const checkAndToggle = () => {
+        const text = (progressEl.textContent || '').trim();
+        const num = parseInt(text, 10);
+        if (!isNaN(num) && num >= 100) {
+          progressEl.style.display = 'none';
+          indulgeBtn.style.display = 'flex';
+        }
+      };
+
+      // Observe changes to the progress element
+      const obs = new MutationObserver(() => checkAndToggle());
+      obs.observe(progressEl, { childList: true, characterData: true, subtree: true });
+      // also poll once in a bit in case loader updates outside mutation events
+      setTimeout(checkAndToggle, 50);
+    });
+  </script>
+  <script>
+    // Show the bottom intro image only for jan and feb months.
+    (function() {
+      const bottom = document.querySelector('.bottom-text');
+      if (!bottom) return;
+      // hide by default until timeline signals otherwise
+      bottom.style.display = 'none';
+
+      const update = (month) => {
+        if (!month) return bottom.style.display = 'none';
+        if (month === 'intro' || month === 'jan') bottom.style.display = 'flex';
+        else bottom.style.display = 'none';
+      };
+
+      // listen for the custom event dispatched by the timeline bundle
+      document.addEventListener('timeline:activeMonthChanged', (ev) => {
+        try { update(ev && ev.detail && ev.detail.activeMonth ? ev.detail.activeMonth : (window.timeline && window.timeline.activeMonth)); } catch (e) {}
+      });
+
+      // fallback: poll once after a short delay in case timeline is ready
+      setTimeout(() => {
+        try { update(window.timeline && window.timeline.activeMonth); } catch (e) {}
+      }, 200);
+    })();
+  </script>
+  <script>
+    // Show the feb top left image only for feb month.
+    (function() {
+      const febImage = document.querySelector('.feb-top-right-image');
+      if (!febImage) return;
+      // hide by default until timeline signals otherwise
+      febImage.style.display = 'none';
+
+      const update = (month) => {
+        document.body.classList.remove('month-feb','month-apr','month-may','month-jun','month-mar','month-intro','month-jan');
+        if (month) document.body.classList.add('month-' + month);
+        const cursorImg = document.querySelector('.cursor .pointer img');
+        if (cursorImg) {
+          if (month === 'apr' || month === 'may' || month === 'jun') {
+            cursorImg.src = './assets/apr/yeol.png';
+          } else {
+            cursorImg.src = './images/y.png';
+          }
+        }
+        const instaImg = document.querySelector('.insta-icon img');
+        if (instaImg) {
+          if (month === 'apr' || month === 'may' || month === 'jun') {
+            instaImg.src = './assets/apr/insta.png';
+          } else {
+            instaImg.src = './images/insta-icon.png';
+          }
+        }
+        if (!month) return febImage.style.display = 'none';
+        if (month === 'feb') febImage.style.display = 'block';
+        else febImage.style.display = 'none';
+      };
+
+      // listen for the custom event dispatched by the timeline bundle
+      document.addEventListener('timeline:activeMonthChanged', (ev) => {
+        try { update(ev && ev.detail && ev.detail.activeMonth ? ev.detail.activeMonth : (window.timeline && window.timeline.activeMonth)); } catch (e) {}
+      });
+
+      // fallback: poll once after a short delay in case timeline is ready
+      setTimeout(() => {
+        try { update(window.timeline && window.timeline.activeMonth); } catch (e) {}
+      }, 200);
+    })();
+  </script>
+  <script>
+    // Show the apr top left image only for apr month.
+    (function() {
+      const aprImage = document.querySelector('.apr-top-right-image');
+      if (!aprImage) return;
+      // hide by default until timeline signals otherwise
+      aprImage.style.display = 'none';
+
+      const update = (month) => {
+        document.body.classList.remove('month-feb','month-apr','month-may','month-jun','month-mar','month-intro','month-jan');
+        if (month) document.body.classList.add('month-' + month);
+        const cursorImg = document.querySelector('.cursor .pointer img');
+        if (cursorImg) {
+          if (month === 'apr' || month === 'may' || month === 'jun') {
+            cursorImg.src = './assets/apr/yeol.png';
+          } else {
+            cursorImg.src = './images/y.png';
+          }
+        }
+        const instaImg = document.querySelector('.insta-icon img');
+        if (instaImg) {
+          if (month === 'apr' || month === 'may' || month === 'jun') {
+            instaImg.src = './assets/apr/insta.png';
+          } else {
+            instaImg.src = './images/insta-icon.png';
+          }
+        }
+        if (!month) return aprImage.style.display = 'none';
+        if (month === 'apr') aprImage.style.display = 'block';
+        else aprImage.style.display = 'none';
+      };
+
+      // listen for the custom event dispatched by the timeline bundle
+      document.addEventListener('timeline:activeMonthChanged', (ev) => {
+        try { update(ev && ev.detail && ev.detail.activeMonth ? ev.detail.activeMonth : (window.timeline && window.timeline.activeMonth)); } catch (e) {}
+      });
+
+      // fallback: poll once after a short delay in case timeline is ready
+      setTimeout(() => {
+        try { update(window.timeline && window.timeline.activeMonth); } catch (e) {}
+      }, 200);
+    })();
+  </script>
+  <script>
+    // Show the mar top left image only for mar month.
+    (function() {
+      const marImage = document.querySelector('.mar-top-right-image');
+      if (!marImage) return;
+      // hide by default until timeline signals otherwise
+      marImage.style.display = 'none';
+
+      const update = (month) => {
+        document.body.classList.remove('month-feb','month-apr','month-may','month-jun','month-mar','month-intro','month-jan');
+        if (month) document.body.classList.add('month-' + month);
+        const cursorImg = document.querySelector('.cursor .pointer img');
+        if (cursorImg) {
+          if (month === 'apr' || month === 'may' || month === 'jun') {
+            cursorImg.src = './assets/apr/yeol.png';
+          } else {
+            cursorImg.src = './images/y.png';
+          }
+        }
+        const instaImg = document.querySelector('.insta-icon img');
+        if (instaImg) {
+          if (month === 'apr' || month === 'may' || month === 'jun') {
+            instaImg.src = './assets/apr/insta.png';
+          } else {
+            instaImg.src = './images/insta-icon.png';
+          }
+        }
+        if (!month) return marImage.style.display = 'none';
+        if (month === 'mar') marImage.style.display = 'block';
+        else marImage.style.display = 'none';
+      };
+
+      // listen for the custom event dispatched by the timeline bundle
+      document.addEventListener('timeline:activeMonthChanged', (ev) => {
+        try { update(ev && ev.detail && ev.detail.activeMonth ? ev.detail.activeMonth : (window.timeline && window.timeline.activeMonth)); } catch (e) {}
+      });
+
+      // fallback: poll once after a short delay in case timeline is ready
+      setTimeout(() => {
+        try { update(window.timeline && window.timeline.activeMonth); } catch (e) {}
+      }, 200);
+    })();
+  </script>
+  <script>
+    // Show the may cuts gallery only for may month.
+    (function() {
+      let hasLockedDefault = false;
+
+      const mayGallery = document.querySelector('.shape-slider');
+      if (!mayGallery) return;
+      // hide by default until timeline signals otherwise
+      mayGallery.style.display = 'none';
+
+      const update = (month) => {
+        document.body.classList.remove('month-feb','month-apr','month-may','month-jun','month-mar','month-intro','month-jan');
+        if (month) document.body.classList.add('month-' + month);
+        const cursorImg = document.querySelector('.cursor .pointer img');
+        if (cursorImg) {
+          if (month === 'apr' || month === 'may' || month === 'jun') {
+            cursorImg.src = './assets/apr/yeol.png';
+          } else {
+            cursorImg.src = './images/y.png';
+          }
+        }
+        const instaImg = document.querySelector('.insta-icon img');
+        if (instaImg) {
+          if (month === 'apr' || month === 'may' || month === 'jun') {
+            instaImg.src = './assets/apr/insta.png';
+          } else {
+            instaImg.src = './images/insta-icon.png';
+          }
+        }
+        if (!month) return mayGallery.style.display = 'none';
+        if (month === 'may') {
+          mayGallery.style.display = 'block';
+          // when gallery becomes visible, ensure the infinite scroll is positioned in the middle
+          if (typeof setInitialPosition === 'function') setInitialPosition();
+          // center the Cushion by default to match the desired layout
+          setTimeout(() => {
+            forceDefaultActive('PRINCESS');
+            centerItemByAlt('PRINCESS');
+
+            setTimeout(() => {
+              hasLockedDefault = true;
+              updateActiveShape();
+            }, 60);
+
+          }, 120);
+        } else {
+          mayGallery.style.display = 'none';
+        }
+      };
+
+      // JS — Automatically Detect Center Shape + infinite loop setup
+      const list = document.getElementById("cutsShapeList");
+      const label = document.querySelector("#mayCutsSlider .shape-name");
+
+      // initial items (will be replaced after cloning)
+      let items = Array.from(list.children);
+
+      // ---- INFINITE SETUP ----
+      const CLONE_COUNT = items.length;
+
+      // Clone items at end
+      items.forEach(item => {
+        const clone = item.cloneNode(true);
+        clone.classList.add("clone");
+        list.appendChild(clone);
+      });
+
+      // Clone items at start
+      items.forEach(item => {
+        const clone = item.cloneNode(true);
+        clone.classList.add("clone");
+        list.insertBefore(clone, list.firstChild);
+      });
+
+      // Re-collect items (includes clones)
+      items = Array.from(list.children);
+
+      function forceDefaultActive(name) {
+        items.forEach(i => i.classList.remove("active"));
+        const target = items.find(item => {
+          const img = item.querySelector("img");
+          return img && img.alt === name;
+        });
+        if (target) target.classList.add("active");
+      }
+
+      function updateActiveShape() {
+        if (!hasLockedDefault) return;
+
+        const center = window.innerWidth / 2;
+        let closest = null;
+        let closestDist = Infinity;
+
+        items.forEach((item) => {
+          const rect = item.getBoundingClientRect();
+          const itemCenter = rect.left + rect.width / 2;
+          const dist = Math.abs(center - itemCenter);
+          item.classList.remove("active");
+          if (dist < closestDist) {
+            closestDist = dist;
+            closest = item;
+          }
+        });
+
+        if (closest) {
+          closest.classList.add("active");
+          const img = closest.querySelector("img");
+          if (img && label) label.innerText = img.alt;
+        }
+      }
+
+      // Set initial scroll position (middle set of originals)
+      let isAdjusting = false;
+
+      function setInitialPosition() {
+        // ensure no smooth scroll while positioning to avoid visible anim
+        const prev = list.style.scrollBehavior;
+        list.style.scrollBehavior = 'auto';
+        requestAnimationFrame(() => {
+          if (!items || !items[0]) return;
+          const styles = window.getComputedStyle(list);
+          const gap = parseInt(styles.gap || styles.columnGap || '40', 10) || 40;
+          const itemWidth = items[0].offsetWidth + gap;
+          isAdjusting = true;
+          list.scrollLeft = itemWidth * CLONE_COUNT;
+          // small delay to allow layout to settle before re-enabling handlers
+          setTimeout(() => {
+            isAdjusting = false;
+            list.style.scrollBehavior = prev || '';
+            requestAnimationFrame(updateActiveShape);
+          }, 50);
+        });
+      }
+
+      // run once now
+      setInitialPosition();
+
+      // Seamless jump logic + update active
+      // Seamless jump logic with guard to avoid recursion/jank
+      list.addEventListener("scroll", () => {
+        if (isAdjusting) return; // ignore events while programmatically adjusting
+        const itemWidth = items[0].offsetWidth + 20;
+        const maxScroll = itemWidth * CLONE_COUNT;
+        const minScroll = itemWidth;
+
+        // if we need to jump, temporarily disable smooth behavior and mark adjusting
+        if (list.scrollLeft <= minScroll) {
+          isAdjusting = true;
+          const prev = list.style.scrollBehavior;
+          list.style.scrollBehavior = 'auto';
+          list.scrollLeft += maxScroll;
+          // restore after a short tick
+          setTimeout(() => { list.style.scrollBehavior = prev || ''; isAdjusting = false; requestAnimationFrame(updateActiveShape); }, 40);
+          return;
+        } else if (list.scrollLeft >= maxScroll * 2) {
+          isAdjusting = true;
+          const prev = list.style.scrollBehavior;
+          list.style.scrollBehavior = 'auto';
+          list.scrollLeft -= maxScroll;
+          setTimeout(() => { list.style.scrollBehavior = prev || ''; isAdjusting = false; requestAnimationFrame(updateActiveShape); }, 40);
+          return;
+        }
+
+        requestAnimationFrame(updateActiveShape);
+      }, { passive: true });
+
+      // Arrow handlers (use same step behavior)
+      const leftArrow = document.getElementById("cutsLeftArrow");
+      const rightArrow = document.getElementById("cutsRightArrow");
+      const step = () => Math.max(200, Math.floor(list.clientWidth * 0.35));
+
+      function centerItemByAlt(name) {
+        const candidates = items.filter(item => {
+          const img = item.querySelector('img');
+          return img && img.alt && img.alt.toUpperCase() === name.toUpperCase();
+        });
+        if (!candidates.length) return;
+        // choose the candidate currently closest to the center for minimal movement
+        const listRect = list.getBoundingClientRect();
+        const centerX = listRect.left + listRect.width / 2;
+        let target = candidates[0];
+        let best = Infinity;
+        candidates.forEach(item => {
+          const r = item.getBoundingClientRect();
+          const c = r.left + r.width / 2;
+          const d = Math.abs(c - centerX);
+          if (d < best) { best = d; target = item; }
+        });
+        let attempts = 0;
+        const prev = list.style.scrollBehavior;
+        list.style.scrollBehavior = 'auto';
+        function step() {
+          const rect = target.getBoundingClientRect();
+          const delta = (rect.left + rect.width / 2) - centerX;
+          if (Math.abs(delta) > 2 && attempts < 12) {
+            list.scrollLeft += delta;
+            attempts++;
+            requestAnimationFrame(step);
+          } else {
+            list.style.scrollBehavior = prev || '';
+            requestAnimationFrame(updateActiveShape);
+          }
+        }
+        step();
+      }
+
+      if (leftArrow) {
+        leftArrow.addEventListener("click", (e) => {
+          e.preventDefault(); e.stopPropagation();
+          list.scrollLeft -= step();
+          requestAnimationFrame(updateActiveShape);
+        });
+      }
+
+      if (rightArrow) {
+        rightArrow.addEventListener("click", (e) => {
+          e.preventDefault(); e.stopPropagation();
+          list.scrollLeft += step();
+          requestAnimationFrame(updateActiveShape);
+        });
+      }
+
+      // listen for the custom event dispatched by the timeline bundle
+      document.addEventListener('timeline:activeMonthChanged', (ev) => {
+        try { update(ev && ev.detail && ev.detail.activeMonth ? ev.detail.activeMonth : (window.timeline && window.timeline.activeMonth)); } catch (e) {}
+      });
+
+      // fallback: poll once after a short delay in case timeline is ready
+      setTimeout(() => {
+        try { update(window.timeline && window.timeline.activeMonth); } catch (e) {}
+      }, 200);
+    })();
+  </script>
+  <script>
+    // Show bottom center icon only for feb, mar and may.
+    (function() {
+      const icon = document.querySelector('.bottom-center-icon');
+      if (!icon) return;
+      icon.style.display = 'none';
+
+      const update = (month) => {
+        if (!month) return icon.style.display = 'none';
+        if (month === 'feb' || month === 'mar' || month === 'may') {
+          icon.style.display = 'block';
+          icon.classList.add('bobbing');
+        } else {
+          icon.style.display = 'none';
+          icon.classList.remove('bobbing');
+        }
+      };
+
+      document.addEventListener('timeline:activeMonthChanged', (ev) => {
+        try { update(ev && ev.detail && ev.detail.activeMonth ? ev.detail.activeMonth : (window.timeline && window.timeline.activeMonth)); } catch (e) {}
+      });
+      setTimeout(() => {
+        try { update(window.timeline && window.timeline.activeMonth); } catch (e) {}
+      }, 200);
+    })();
+  </script>
+  <script>
+    // Show bottom center icon2 only for apr and jun.
+    (function() {
+      const icon = document.querySelector('.bottom-center-icon2');
+      if (!icon) return;
+      icon.style.display = 'none';
+
+      const update = (month) => {
+        if (!month) return icon.style.display = 'none';
+        if (month === 'apr' || month === 'jun') {
+          icon.style.display = 'block';
+          icon.classList.add('bobbing');
+        } else {
+          icon.style.display = 'none';
+          icon.classList.remove('bobbing');
+        }
+      };
+
+      document.addEventListener('timeline:activeMonthChanged', (ev) => {
+        try { update(ev && ev.detail && ev.detail.activeMonth ? ev.detail.activeMonth : (window.timeline && window.timeline.activeMonth)); } catch (e) {}
+      });
+      setTimeout(() => {
+        try { update(window.timeline && window.timeline.activeMonth); } catch (e) {}
+      }, 200);
+    })();
+  </script>
+  <script>
+    // Show the END page cards only for 'end' month.
+    (function() {
+      const endCta = document.getElementById('endCta');
+      if (!endCta) return;
+      endCta.style.display = 'none';
+
+      // elements to hide/show alongside the end section
+      const shopCta = document.querySelector('.shop-beyon-cta');
+      const instaIcon = document.querySelector('.insta-icon');
+
+      const update = (month) => {
+        if (!month) {
+          endCta.style.display = 'none';
+          if (shopCta) shopCta.style.display = '';
+          if (instaIcon) instaIcon.style.display = '';
+          return;
+        }
+        if (month === 'end') {
+          endCta.style.display = 'block';
+          if (shopCta) shopCta.style.display = 'none';
+          if (instaIcon) instaIcon.style.display = 'none';
+        } else {
+          endCta.style.display = 'none';
+          if (shopCta) shopCta.style.display = '';
+          if (instaIcon) instaIcon.style.display = '';
+        }
+      };
+
+      document.addEventListener('timeline:activeMonthChanged', (ev) => {
+        try { update(ev && ev.detail && ev.detail.activeMonth ? ev.detail.activeMonth : (window.timeline && window.timeline.activeMonth)); } catch (e) {}
+      });
+      setTimeout(() => {
+        try { update(window.timeline && window.timeline.activeMonth); } catch (e) {}
+      }, 200);
+    })();
+  </script>
+  <script>
+    // Show the may top right image only for may month.
+    (function() {
+      const mayImage = document.querySelector('.may-top-right-image');
+      if (!mayImage) return;
+      // hide by default until timeline signals otherwise
+      mayImage.style.display = 'none';
+
+      const update = (month) => {
+        if (!month) return mayImage.style.display = 'none';
+        if (month === 'may') mayImage.style.display = 'block';
+        else mayImage.style.display = 'none';
+      };
+
+      // listen for the custom event dispatched by the timeline bundle
+      document.addEventListener('timeline:activeMonthChanged', (ev) => {
+        try { update(ev && ev.detail && ev.detail.activeMonth ? ev.detail.activeMonth : (window.timeline && window.timeline.activeMonth)); } catch (e) {}
+      });
+
+      // fallback: poll once after a short delay in case timeline is ready
+      setTimeout(() => {
+        try { update(window.timeline && window.timeline.activeMonth); } catch (e) {}
+      }, 200);
+    })();
+  </script>
+  <script>
+    // Show the jun top right image only for jun month.
+    (function() {
+      const junImage = document.querySelector('.jun-top-right-image');
+      if (!junImage) return;
+      // hide by default until timeline signals otherwise
+      junImage.style.display = 'none';
+
+      const update = (month) => {
+        if (!month) return junImage.style.display = 'none';
+        if (month === 'jun') junImage.style.display = 'block';
+        else junImage.style.display = 'none';
+      };
+
+      // listen for the custom event dispatched by the timeline bundle
+      document.addEventListener('timeline:activeMonthChanged', (ev) => {
+        try { update(ev && ev.detail && ev.detail.activeMonth ? ev.detail.activeMonth : (window.timeline && window.timeline.activeMonth)); } catch (e) {}
+      });
+
+      // fallback: poll once after a short delay in case timeline is ready
+      setTimeout(() => {
+        try { update(window.timeline && window.timeline.activeMonth); } catch (e) {}
+      }, 200);
+    })();
+  </script>
+  <script>
+    // Show the jun text button only for jun month, with delay for full scroll.
+    (function() {
+      const junTextButton = document.querySelector('.jun-text-button');
+      if (!junTextButton) return;
+      // hide by default until timeline signals otherwise
+      junTextButton.style.display = 'none';
+      junTextButton.style.opacity = '0';
+
+      const update = (month) => {
+        if (!month) {
+          junTextButton.style.display = 'none';
+          junTextButton.style.opacity = '0';
+          junTextButton.style.visibility = 'hidden';
+          return;
+        }
+        if (month === 'jun') {
+          junTextButton.style.display = 'block';
+          junTextButton.style.visibility = 'visible';
+          setTimeout(() => {
+            junTextButton.style.opacity = '1';
+          }, 2500);
+        } else {
+          junTextButton.style.display = 'none';
+          junTextButton.style.opacity = '0';
+          junTextButton.style.visibility = 'hidden';
+        }
+      };
+
+      // listen for the custom event dispatched by the timeline bundle
+      document.addEventListener('timeline:activeMonthChanged', (ev) => {
+        try { update(ev && ev.detail && ev.detail.activeMonth ? ev.detail.activeMonth : (window.timeline && window.timeline.activeMonth)); } catch (e) {}
+      });
+
+      // fallback: poll once after a short delay in case timeline is ready
+      setTimeout(() => {
+        try { update(window.timeline && window.timeline.activeMonth); } catch (e) {}
+      }, 200);
+    })();
+  </script>
+  <script>
+    // Fallback to force loading completion if assets fail to load in file:// protocol
+    setTimeout(() => {
+      if (!document.body.classList.contains('ready')) {
+        handleGoBeyond();
+      }
+    }, 3000);
+  </script>
+</body>
+</html>
